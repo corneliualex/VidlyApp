@@ -14,11 +14,12 @@
 }
 else
 {
-    <table class="table table-striped table-hover ">
+    <table class="table table-striped table-hover table-bordered ">
         <thead>
             <tr>
                 <th>#</th>
                 <th>Name</th>
+                <th>Membership Type</th>
 
             </tr>
         </thead>
@@ -29,6 +30,7 @@ else
                 <tr>
                     <td>@(++i)</td>
                     <td>@Html.ActionLink(customer.Name, "Details", new { id = customer.Id }, null)</td>
+                    <td>@customer.MembershipType.Name</td>
                 </tr>
             }
 
