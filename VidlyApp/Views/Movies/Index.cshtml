@@ -7,6 +7,8 @@
 
 <h2>Movies</h2>
 
+<a href="@Url.Action("New", "Movies")" class="btn btn-primary">Add movie</a>
+
 @if (!Model.Any())
 {
     <p>No movies in the list</p>
@@ -18,7 +20,7 @@ else
             <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>Gendre</th>
+                <th>Genre</th>
             </tr>
         </thead>
         <tbody>
