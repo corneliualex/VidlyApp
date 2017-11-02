@@ -36,6 +36,11 @@ namespace VidlyApp.Controllers
             return View(customer);
         }
 
+        public ActionResult New()
+        {
+            return View();
+        }
+
 
         /*private static IEnumerable<Customer> GetCustomers()
         {
