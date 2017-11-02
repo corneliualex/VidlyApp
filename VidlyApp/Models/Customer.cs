@@ -21,7 +21,11 @@ namespace VidlyApp.Models
         public bool IsSubscribedToNewsletter { get; set; }
 
         public MembershipType MembershipType { get; set; }
+
+        
+        [Display(Name="Membership Type")]
         //By convention : ClassNameId it's recognized by VS and treats it as a foreign key
-        public byte MembershipTypeId { get; set; }//for optimization instead of using the entire Membership object we may only need the foreign key              
+        //for optimization instead of using the entire Membership object we may only need the foreign key        
+        public byte MembershipTypeId { get; set; }      
     }
 }
