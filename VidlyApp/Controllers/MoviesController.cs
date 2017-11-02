@@ -45,6 +45,7 @@ namespace VidlyApp.Controllers
         [HttpPost]
         public ActionResult Create(Movie movie)
         {
+            //some changes
             _context.Movies.Add(movie);
             _context.SaveChanges();
             return RedirectToAction("Index", "Movies");
