@@ -45,6 +45,7 @@ namespace VidlyApp.Controllers
         [HttpPost]
         public ActionResult Create(Movie movie)
         {
+            //other changes
             //some changes
             _context.Movies.Add(movie);
             _context.SaveChanges();
