@@ -28,7 +28,7 @@ else
             {
                 <tr>
                     <td>@(++i)</td>
-                    <td>@Html.ActionLink(movie.Name, "Details", new { id = movie.Id })</td>
+                    <td>@Html.ActionLink(movie.Name, "Edit", new { id = movie.Id })</td>
                     <td>@movie.Gendre.Name</td>
                 </tr>
             }
