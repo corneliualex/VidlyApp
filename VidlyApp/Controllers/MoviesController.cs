@@ -43,6 +43,7 @@ namespace VidlyApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Movie movie)
         {
             if (movie.Id == 0)

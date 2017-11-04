@@ -239,6 +239,10 @@
     <Compile Include="Migrations\201711031707049_AddedAnnotationsToMovieModel.Designer.cs">
       <DependentUpon>201711031707049_AddedAnnotationsToMovieModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711041350383_AddedRequiredForMemtype.cs" />
+    <Compile Include="Migrations\201711041350383_AddedRequiredForMemtype.Designer.cs">
+      <DependentUpon>201711041350383_AddedRequiredForMemtype.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -246,6 +250,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsOldIfAMemberAttribute.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -382,6 +387,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711031707049_AddedAnnotationsToMovieModel.resx">
       <DependentUpon>201711031707049_AddedAnnotationsToMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711041350383_AddedRequiredForMemtype.resx">
+      <DependentUpon>201711041350383_AddedRequiredForMemtype.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
