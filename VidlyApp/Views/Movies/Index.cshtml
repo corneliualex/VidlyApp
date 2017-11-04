@@ -5,7 +5,7 @@
     var i = 0;
 }
 
-<h2>Movies</h2>
+<h2>Movies (@Model.Count())</h2>
 
 <a href="@Url.Action("New", "Movies")" class="btn btn-primary">Add movie</a>
 
@@ -26,12 +26,13 @@ else
         <tbody>
             @foreach (var movie in Model)
             {
+              
                 <tr>
                     <td>@(++i)</td>
                     <td>@Html.ActionLink(movie.Name, "Edit", new { id = movie.Id })</td>
                     <td>@movie.Gendre.Name</td>
                 </tr>
-            }
+                }
 
         </tbody>
     </table>

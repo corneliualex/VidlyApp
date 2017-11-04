@@ -16,16 +16,18 @@ namespace VidlyApp.Models
         public string Name { get; set; }
 
         [Display(Name = "Date of birth")]
+        [Min18YearsOldIfAMember]
         public DateTime? BirthDate { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }
 
         public MembershipType MembershipType { get; set; }
 
-        
+        [Required]
         [Display(Name="Membership Type")]
         //By convention : ClassNameId it's recognized by VS and treats it as a foreign key
         //for optimization instead of using the entire Membership object we may only need the foreign key        
-        public byte MembershipTypeId { get; set; }      
+        public byte MembershipTypeId { get; set; }
+
     }
 }
