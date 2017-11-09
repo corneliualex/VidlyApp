@@ -20,7 +20,7 @@ namespace VidlyApp.DTOs
 
         public short NumberInStock { get; set; }
 
-        //public Gendre Gendre { get; set; }
+        public GendreDto Gendre { get; set; }
 
         public byte GendreId { get; set; }
     }
