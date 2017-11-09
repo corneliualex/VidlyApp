@@ -8,6 +8,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using VidlyApp.DTOs;
 using VidlyApp.Models;
+using System.Data.Entity;
 
 namespace VidlyApp.Controllers.Api
 {
@@ -19,7 +20,7 @@ namespace VidlyApp.Controllers.Api
         [System.Web.Http.HttpGet]
         public IHttpActionResult GetMovies()
         {
-            var movieDtos = _context.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>);
+            var movieDtos = _context.Movies.Include(m => m.Gendre).ToList().Select(Mapper.Map<Movie, MovieDto>);
             
             return Ok(movieDtos);
         }
