@@ -275,8 +275,14 @@
     <Compile Include="Migrations\201711101134493_AddDrivingLicenseToAppUser.Designer.cs">
       <DependentUpon>201711101134493_AddDrivingLicenseToAppUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711151205579_AddedPhoneToAppUser.cs" />
+    <Compile Include="Migrations\201711151205579_AddedPhoneToAppUser.Designer.cs">
+      <DependentUpon>201711151205579_AddedPhoneToAppUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Gendre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -290,6 +296,7 @@
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\NewMovieViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -605,6 +612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711101134493_AddDrivingLicenseToAppUser.resx">
       <DependentUpon>201711101134493_AddDrivingLicenseToAppUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711151205579_AddedPhoneToAppUser.resx">
+      <DependentUpon>201711151205579_AddedPhoneToAppUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

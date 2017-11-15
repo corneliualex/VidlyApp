@@ -10,6 +10,7 @@ using VidlyApp.ViewModels;
 
 namespace VidlyApp.Controllers
 {
+    [Authorize(Roles = RoleName.CanManageMovies)]
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context = new ApplicationDbContext();
@@ -20,6 +21,7 @@ namespace VidlyApp.Controllers
         }
 
         //GET : movies/
+        [AllowAnonymous]
         public ActionResult Index()
         {
             //var movies = _context.Movies.Include(m => m.Gendre).ToList();
@@ -34,7 +36,7 @@ namespace VidlyApp.Controllers
             return View(movie);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        
         public ActionResult New()
         {
             var genres = _context.Gendres.ToList();
