@@ -32,6 +32,8 @@ namespace VidlyApp.Models
         [Required]
         [Display(Name = "Genre")]
         public byte GendreId { get; set; }
+
+        public int NumberAvailability { get; set; }
     }
 }
 

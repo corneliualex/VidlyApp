@@ -200,6 +200,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\RentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -208,6 +209,7 @@
     <Compile Include="DTOs\GendreDto.cs" />
     <Compile Include="DTOs\MembershipTypeDto.cs" />
     <Compile Include="DTOs\MovieDto.cs" />
+    <Compile Include="DTOs\NewRentalDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -279,6 +281,14 @@
     <Compile Include="Migrations\201711151205579_AddedPhoneToAppUser.Designer.cs">
       <DependentUpon>201711151205579_AddedPhoneToAppUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711171420089_AddedRentals.cs" />
+    <Compile Include="Migrations\201711171420089_AddedRentals.Designer.cs">
+      <DependentUpon>201711171420089_AddedRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171443412_AddedPropertyToMovieModel.cs" />
+    <Compile Include="Migrations\201711171443412_AddedPropertyToMovieModel.Designer.cs">
+      <DependentUpon>201711171443412_AddedPropertyToMovieModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -290,6 +300,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsOldIfAMemberAttribute.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -615,6 +626,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711151205579_AddedPhoneToAppUser.resx">
       <DependentUpon>201711151205579_AddedPhoneToAppUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171420089_AddedRentals.resx">
+      <DependentUpon>201711171420089_AddedRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171443412_AddedPropertyToMovieModel.resx">
+      <DependentUpon>201711171443412_AddedPropertyToMovieModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
